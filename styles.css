@@ -1,7 +1,11 @@
+body {
+    width: 100vw;
+}
+
 .sidebar {
-    position  : absolute;
+    position  : fixed;
     width     : 150px;
-    height    : 100vh;
+    height    : 97vh;
     background: #191718;
     left      : 0;
     top       : 0;
@@ -34,8 +38,9 @@
 }
 
 .content {
-    width      : 1;
-    margin-left: 150px;
+    position   : relative;
+    margin-left: 144px;
+    height     : 97vh
 }
 
 .content .logo {
@@ -45,9 +50,87 @@
     justify-content: center;
     align-items    : center;
     margin         : 0;
+    padding-top    : 20px;
+    padding-bottom : 30px;
 }
 
 .content .logo img {
     width : auto;
     height: 100%;
+}
+
+.content .description {
+    background: #EFEFEF;
+    margin    : 0px 129px;
+}
+
+.content .description h1 {
+    font-style    : normal;
+    font-size     : 18px;
+    line-height   : 21px;
+    color         : #000000;
+    text-align    : center;
+    padding-top   : 38px;
+    padding-bottom: 18px;
+    margin        : 0px;
+
+}
+
+.content .description p {
+    font-style    : normal;
+    font-size     : 16px;
+    line-height   : 18.75px;
+    display       : flex;
+    align-items   : center;
+    text-align    : center;
+    padding       : 0px 25%;
+    color         : #000000;
+    margin        : 0px;
+    padding-bottom: 38px;
+}
+
+.list {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-top     : 40px;
+    padding-left   : 129px;
+    padding-right  : 129px;
+}
+
+.list p {
+    font-size  : 14px;
+    margin     : 0px;
+    padding-top: 18px;
+}
+
+.list h2 {
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 24px;
+    margin     : 0px
+}
+
+.list img {
+    float       : left;
+    margin-right: 16px;
+}
+
+.list .list-1 {
+    padding-right: 50px;
+}
+
+.list .list-2 {
+    padding-right: 50px;
+}
+
+.footer-copyright {
+    width       : 100%;
+    margin-left : 150px;
+    position    : absolute;
+    padding-left: 129px;
+    padding-top : 30px;
+    bottom      : 40px;
+    border-top  : 1px solid #DEDEDE;
+
 }
